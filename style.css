@@ -4,6 +4,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -203,20 +207,35 @@ form input {
 }
 
 #ending { padding: 50px 0 30px; }
-hr { width: 100%; border: 0; border-top: 1px solid darkgrey; }
-.footer-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
-.footer-left { flex-basis: 50%; margin-top: 3px; }
+hr { width: 100%; border: 0; border-top: 1px solid darkgrey; margin-bottom: 24px; }
+
+.footer {
+    text-align: center;
+}
+
+.social-links h4 {
+    margin-bottom: 14px;
+}
 
 .social-icon {
-    width: 250px;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 10px;
+}
+
+.social-icon a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
 }
 
 .social-icon img {
     width: 20px;
-    margin: 0 8px 20px;
     cursor: pointer;
     padding: 10px;
 }
@@ -268,5 +287,6 @@ hr { width: 100%; border: 0; border-top: 1px solid darkgrey; }
     .school-col img { width: 260px; height: 180px; }
 
     .awardtext p { line-height: 30px; }
-    .social-icon { width: 100%; }
+    .social-icon { width: 100%; gap: 10px; }
+    .social-icon a { width: 42px; height: 42px; }
 }
